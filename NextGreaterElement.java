@@ -22,10 +22,13 @@ public class NextGreaterElement
 
     public static void main(String[] args) 
     {
-        Stack<Integer> a = new Stack<>();
+        // Stack<Integer> a = new Stack<>();
         int n = 4;
-        int arr[] = {1, 3, 2, 4};
-        
+        long arr[] = {1, 3, 2, 4};
+        long a[] = nextLargerElement(arr, n);
+        for(long i: a) {
+            System.out.println(i);
+        }
     }
 
 }
