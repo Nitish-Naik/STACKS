@@ -1,8 +1,9 @@
-import java.util.*;
-public class ParenthesisChecker 
-{
-    public static boolean isPar(String x)
+import java.util.Stack;
+
+public class ParenthesisChecker {
+    static boolean ispar(String x)
     {
+        // add your code here
         Stack<Character> stack = new Stack<>();
         for(int i=0; i<x.length(); i++)
         {
@@ -49,8 +50,9 @@ public class ParenthesisChecker
         }
         return stack.isEmpty();
     }
-    public static void main(String[] args) 
-    {
-        System.out.println(isPar("([{}])"));
+
+    public static void main(String[] args) {
+        String x = "[()]{}{[()()]()}";
+        System.out.println(ispar(x));
     }
 }
